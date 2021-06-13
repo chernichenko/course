@@ -1,0 +1,19 @@
+<% var data = {
+  title: "7even"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main data-barba="container" data-barba-namespace="home" class="main">
+  
+  <div class="mainpage">
+    <div class="flex-wrap flex column center middle">
+      <h1">Some title</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus ab unde voluptatibus sapiente praesentium tempora esse commodi illum. Itaque quia quos earum vitae odit molestiae aspernatur delectus culpa iure?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus ab unde voluptatibus sapiente praesentium tempora esse commodi illum. Itaque quia quos earum vitae odit molestiae aspernatur delectus culpa iure?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus ab unde voluptatibus sapiente praesentium tempora esse commodi illum. Itaque quia quos earum vitae odit molestiae aspernatur delectus culpa iure?</p>
+    </div>
+  </div>
+
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
