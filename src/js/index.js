@@ -21,16 +21,50 @@ const animationInit = () => {
 	$('body').addClass('ready')
 	$('.main').addClass('active')
 
-	let tlHeader = new TimelineMax()
-	tlHeader
-		.to($('header .logo-wrap img'), 1, { opacity: 1 }, 0)
-		.to($('header .logo-wrap'), 1, { width: 220 }, 1)
-		.to($('header'), 1, { height: 150 }, 1)
-		.to($('header .row1'), 1, { height: 100 }, 1)
+	const logoTime = 0.25
 
-		.to($('header .line'), 1.5, { width: 0 }, 1.6)
-		.to($('header .row2'), 0.1, { opacity: 1, height: 45 }, 2)
-		.staggerTo($('header ul li'), 1, { opacity: 1, x: 0 }, 0.3, 1.2)
+	setTimeout(() => {
+		let tlLogo = new TimelineMax()
+		tlLogo
+			.to($('.logo-top-3'), logoTime, { opacity: 1 }, 0)
+			.to($('.logo-bottom-1'), logoTime, { opacity: 1 }, 0)
+
+			.to($('.logo-top-3, .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime)
+			.to($('.logo-top-2, .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime)
+
+			.to($('.logo-top-2, .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 2)
+			.to($('.logo-top-1, .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 2)
+			
+			.to($('.logo-top-2, .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 3)
+			
+			.to($('.logo-top-3, .logo-bottom-1'), logoTime, { opacity: 1 }, logoTime * 4)
+			//--------------------------------------------------------------
+			.to($('.logo-romb-1, .logo-romb-7'), logoTime, { opacity: 1 }, 0)
+			
+			.to($('.logo-romb-1, .logo-romb-7'), logoTime, { opacity: 0 }, logoTime)
+			.to($('.logo-romb-3, .logo-romb-5'), logoTime, { opacity: 1 }, logoTime)
+
+			.to($('.logo-romb-3, .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 2)
+			.to($('.logo-romb-2, .logo-romb-4, .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 2)
+			
+			.to($('.logo-romb-2, .logo-romb-4, .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 3)
+			.to($('.logo-romb-1, .logo-romb-3, .logo-romb-5, .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 3)
+			
+			.to($('.logo-romb-1, .logo-romb-2, .logo-romb-3, .logo-romb-4, .logo-romb-5, .logo-romb-6, .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 4)
+	}, 1000)
+
+	setTimeout(() => {
+		let tlHeader = new TimelineMax()
+		tlHeader
+			.to($('header .logo-wrap'), 1, { width: 60 }, 0)
+			.to($('header'), 1, { height: 150 }, 0)
+			.to($('header .row1'), 1, { height: 100 }, 0)
+	
+			.to($('header .line'), 1.5, { width: 0 }, 0.6)
+			.to($('header .row2'), 0.1, { opacity: 1, height: 45 }, 1)
+			.staggerTo($('header ul li'), 1, { opacity: 1, x: 0 }, 0.3, 0.2)
+	}, 2500)
+	
 	// setTimeout(function () {
 	//     $('body').addClass('animated')
 	//     $('.preloader').addClass('close')
