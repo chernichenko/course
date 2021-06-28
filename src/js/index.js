@@ -26,44 +26,58 @@ const animationInit = () => {
 	setTimeout(() => {
 		let tlLogo = new TimelineMax()
 		tlLogo
-			.to($('.logo-top-3'), logoTime, { opacity: 1 }, 0)
-			.to($('.logo-bottom-1'), logoTime, { opacity: 1 }, 0)
+			.to($('.preloader .logo-top-3'), logoTime, { opacity: 1 }, 0)
+			.to($('.preloader .logo-bottom-1'), logoTime, { opacity: 1 }, 0)
 
-			.to($('.logo-top-3, .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime)
-			.to($('.logo-top-2, .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime)
+			.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime)
 
-			.to($('.logo-top-2, .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 2)
-			.to($('.logo-top-1, .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 2)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 2)
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 2)
 			
-			.to($('.logo-top-2, .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 3)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 3)
 			
-			.to($('.logo-top-3, .logo-bottom-1'), logoTime, { opacity: 1 }, logoTime * 4)
+			.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 1 }, logoTime * 4)
+			
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 0 }, logoTime * 5)
+			
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 6)
+
+			.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime * 7)
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 7)
+
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 0 }, logoTime * 8)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 8)
+			
+			.to($('.preloader .logo-top-1, .preloader .logo-top-3, .preloader .logo-bottom-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 9)
 			//--------------------------------------------------------------
-			.to($('.logo-romb-1, .logo-romb-7'), logoTime, { opacity: 1 }, 0)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, 0)
 			
-			.to($('.logo-romb-1, .logo-romb-7'), logoTime, { opacity: 0 }, logoTime)
-			.to($('.logo-romb-3, .logo-romb-5'), logoTime, { opacity: 1 }, logoTime)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-7'), logoTime, { opacity: 0 }, logoTime)
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-5'), logoTime, { opacity: 1 }, logoTime)
 
-			.to($('.logo-romb-3, .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 2)
-			.to($('.logo-romb-2, .logo-romb-4, .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 2)
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 2)
+			.to($('.preloader .logo-romb-2, .preloader .logo-romb-4, .preloader .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 2)
 			
-			.to($('.logo-romb-2, .logo-romb-4, .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 3)
-			.to($('.logo-romb-1, .logo-romb-3, .logo-romb-5, .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 3)
+			.to($('.preloader .logo-romb-2, .preloader .logo-romb-4, .preloader .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 3)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-3, .preloader .logo-romb-5, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 3)
 			
-			.to($('.logo-romb-1, .logo-romb-2, .logo-romb-3, .logo-romb-4, .logo-romb-5, .logo-romb-6, .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 4)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-5, .preloader .logo-romb-6, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 4)
+			
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 5)
+			
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-7'), logoTime, { opacity: 0 }, logoTime * 6)
+
+			.to($('.preloader .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 7)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 1 }, logoTime * 7)
+			
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 8)
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 8)
+
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5, .preloader .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 9)
+			
+			.to($('.preloader'), logoTime, { opacity: 0 }, logoTime * 12)
 	}, 1000)
-
-	setTimeout(() => {
-		let tlHeader = new TimelineMax()
-		tlHeader
-			.to($('header .logo-wrap'), 1, { width: 60 }, 0)
-			.to($('header'), 1, { height: 150 }, 0)
-			.to($('header .row1'), 1, { height: 100 }, 0)
-	
-			.to($('header .line'), 1.5, { width: 0 }, 0.6)
-			.to($('header .row2'), 0.1, { opacity: 1, height: 45 }, 1)
-			.staggerTo($('header ul li'), 1, { opacity: 1, x: 0 }, 0.3, 0.2)
-	}, 2500)
 	
 	// setTimeout(function () {
 	//     $('body').addClass('animated')
@@ -117,9 +131,34 @@ const otherInit = () => {
 						.to(data.next.container, {
 							opacity: 1,
 							duration: 1,
-						});
+						})
 				}, 1000)
 			}
 		}]
+	})
+
+	let openCount = 0
+	$('.burger-wrap').click(function() {
+		++openCount
+		if (openCount % 2 === 1) {
+			$('.mob-menu, header').toggleClass('active')
+		}
+	})
+	$('.mob-menu .back').click(function() {
+		$('.mob-menu, header').removeClass('active')
+	})
+
+	$('.menu-wrap a').click(function(e) {
+		if ($(this).hasClass('active')) {
+			e.preventDefault()
+			e.stopPropagation()
+		}
+
+		if ($('.mob-menu').hasClass('active')) {
+			$('.mob-menu, header').removeClass('active')
+		}
+
+		$('.menu-wrap a').removeClass('active')
+		$(this).addClass('active')
 	})
 }
