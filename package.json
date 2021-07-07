@@ -14,7 +14,9 @@
     "bootstrap": "^4.5.2",
     "gsap": "^3.6.1",
     "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0",
     "popper.js": "^1.16.1",
+    "rellax": "^1.12.1",
     "selectric": "^1.13.0",
     "waypoints": "^4.0.1"
   },
