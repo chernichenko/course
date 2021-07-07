@@ -85,17 +85,6 @@ const animationInit = () => {
 	//     $('.preloader').addClass('close')
 	// }, 1000)
 
-	$.each($('.myAnimate'), function () {
-	    let self = this
-	    new Waypoint({
-	        element: $(self)[0],
-	        handler: function () {
-	            $(self).addClass('active')
-	        },
-	        offset: '90%'
-	    })
-	})
-
 	// let isHeaderActive = function () {
 	//     let top = $(window).scrollTop()
 	//     if (top > 0) {
@@ -166,9 +155,9 @@ const otherInit = () => {
 	})
 
 	const videoUpdateHeight = () => {
-		$('iframe').each(function() {
-			const width = $(this).innerWidth();
-			const height = width / 16 * 9;
+		$('.video-wrap iframe').each(function() {
+			const width = $(this).innerWidth()
+			const height = width / 16 * 9
 			$(this).css('height', `${height}px`)
 		})
 	}
@@ -180,6 +169,17 @@ const otherInit = () => {
 	const otherFuncInit = () => {
 		videoUpdateHeight()
 		new Rellax('.romb')
+
+		$.each($('.myAnimate'), function () {
+			let self = this
+			new Waypoint({
+				 element: $(self)[0],
+				 handler: function () {
+					  $(self).addClass('active')
+				 },
+				 offset: '90%'
+			})
+	  })
 	}
 	otherFuncInit()
 }
