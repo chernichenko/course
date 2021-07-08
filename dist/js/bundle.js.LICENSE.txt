@@ -1,19 +1,22 @@
 /*!
- *         ,/
- *       ,'/
- *     ,' /
- *   ,'  /_____,
- * .'____    ,'
- *      /  ,'
- *     / ,'
- *    /,'
- *   /'
+ * CSSPlugin 3.6.1
+ * https://greensock.com
  *
- * Selectric ϟ v1.13.0 (Aug 22 2017) - http://lcdsantos.github.io/jQuery-Selectric/
+ * Copyright 2008-2021, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+/*!
+ * GSAP 3.6.1
+ * https://greensock.com
  *
- * Copyright (c) 2017 Leonardo Santos; MIT License
- *
- */
+ * @license Copyright 2008-2021, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
 
 /*!
  * Sizzle CSS Selector Engine v2.3.5
