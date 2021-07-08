@@ -1,0 +1,61 @@
+<% var data = {
+   title: "7even"
+ }; %>
+ <%= _.template(require('./../includes/header.html').default)(data) %>
+ 
+ <main data-barba="container" data-barba-namespace="home" class="main">
+   
+   <div class="mainpage">
+     <div class="container">
+
+       <div class="block myAnimate dialog right">
+         <div class="info">
+           <p>Ось і підійшов на шлях до кінця. Це був довгий та тернистий шлях, який допоміг тобі досягнути бажаних результатів, вирішувати проблеми.</p>
+         </div>
+         <div class="image-wrap">
+           <div class="img-wrap">
+             <img src="img/hi.png" alt="">
+           </div>
+         </div>
+       </div>
+
+       <div class="block myAnimate dialog left">
+        <div class="image-wrap">
+          <div class="img-wrap">
+            <img src="img/hi.png" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <p>Детально опрацювавши всю інформацію на сайті, ти отримав дещо більше. Ти навчився вчитися. Не думаю, що тепер пошук будь якої інформації для тебе буде проблемою. Провівши багато часу на хабрі, стаковерфлоу і інших подібних сервісах, тепер ти розумієш, що в гугла є відповіді на всі твої запитання. </p>
+        </div>
+      </div>
+
+      <div class="block myAnimate dialog right">
+        <div class="info">
+          <p>Ти навчився добре фільтрувати інфу. Тепер ти сам розумієш, де є якісна подача контенту, де актуальна інфа, на що потрібно витрачати свій дорогоцінний час, на що ні. </p>
+        </div>
+        <div class="image-wrap">
+          <div class="img-wrap">
+            <img src="img/hi.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="block myAnimate dialog left">
+        <div class="image-wrap">
+          <div class="img-wrap">
+            <img src="img/hi.png" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <p>Я дуже сподіваюсь, що запал в твоїх очах ще не потух і, закривши цю вкладку, ти зрозумієш, що все це тільки початок. </p>
+        </div>
+      </div>
+      
+     </div>
+   </div>
+ 
+ </main>
+ 
+ <%= _.template(require('./../includes/footer.html').default)(data) %>
+ 
