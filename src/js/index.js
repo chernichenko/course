@@ -22,7 +22,7 @@ const animationInit = () => {
 	$('body').addClass('ready')
 	$('.main').addClass('active')
 
-	const logoTime = 0.25
+	const logoTime = 0.2
 
 	setTimeout(() => {
 		let tlLogo = new TimelineMax()
@@ -78,7 +78,7 @@ const animationInit = () => {
 			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5, .preloader .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 9)
 
 			.to($('.preloader'), logoTime, { opacity: 0 }, logoTime * 12)
-	}, 1000)
+	}, 500)
 
 	// setTimeout(function () {
 	//     $('body').addClass('animated')
@@ -112,7 +112,7 @@ const otherInit = () => {
 				return gsap
 					.to(data.current.container, {
 						opacity: 0,
-						duration: 1,
+						duration: 0.5,
 					})
 			},
 			enter(data) {
@@ -120,11 +120,11 @@ const otherInit = () => {
 					gsap
 						.to(data.next.container, {
 							opacity: 1,
-							duration: 1,
+							duration: 0.5,
 						})
 
 					otherFuncInit()
-				}, 1000)
+				}, 500)
 			}
 		}]
 	})
@@ -193,5 +193,14 @@ const otherInit = () => {
 
 	$('.up').click(function () {
 		$('html, body').animate({ scrollTop: 0 }, '300')
+	})
+
+	$('.menu-wrap a, .logo-wrap').click(function(e) {
+		e.preventDefault()
+
+		const targetHref = '/' + $(e.target).attr('href')
+		if (targetHref === window.location.pathname) {
+			e.stopPropagation()
+		}
 	})
 }

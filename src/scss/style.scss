@@ -19,8 +19,6 @@ body {
 }
 
 .preloader {
-    opacity: 0;
-    pointer-events: none;
     background: black;
     width: 100%;
     height: 100%;
@@ -549,11 +547,15 @@ p {
 }
 
 footer {
-    padding: 20px;
+    padding: 70px;
     border-top: 2px solid white;
 
     p {
-        font-size: 14px;
+        font-size: 18px;
+    }
+
+    span {
+        color: $blue;
     }
 
     .container {
@@ -622,6 +624,18 @@ footer {
             width: 36px;
         }
     }
+
+    footer {
+        padding: 42px;
+    
+        p {
+            font-size: 14px;
+        }
+    
+        .container {
+            justify-content: flex-start;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -638,6 +652,14 @@ footer {
         .image-wrap {
             width: 90px;
             height: 90px;
+        }
+    }
+
+    footer {
+        padding: 32px 0;
+    
+        p {
+            width: 80%;
         }
     }
 }
