@@ -71,7 +71,7 @@ header {
         justify-content: center;
 
         li {
-            margin-left: 40px;
+            margin-left: 35px;
         }
     }
 }
@@ -545,6 +545,20 @@ p {
             top: 110%;
             left: -180px;
         }
+    }
+}
+
+footer {
+    padding: 20px;
+    border-top: 2px solid white;
+
+    p {
+        font-size: 14px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
