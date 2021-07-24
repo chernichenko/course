@@ -450,10 +450,24 @@ p {
     .info {
         width: auto;
         max-width: calc(100% - 180px);
+        height: 100%;
         color: white;
-        border: 2px solid white;
-        border-radius: 15px;
-        padding: 15px 20px;
+        position: relative;
+
+        p {
+            font-size: 15px;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            fill:#191919;
+            stroke:#E5E5E5;
+            stroke-width:2;
+            stroke-miterlimit:10;
+        }
     }
 
     .image-wrap {
@@ -469,6 +483,44 @@ p {
             margin-left: 30px;
         }
     }
+}
+
+// Dialog coord
+
+.dialog-html-1 .info p {
+    width: 80%;
+    transform: translate(55px, 25px);
+}
+
+.dialog-html-2 .info {
+    transform: translate(-30px, -10px);
+    svg {
+        width: 160%;
+    }
+    p {
+        width: 100%;
+        transform: translate(70px, 35px);
+    }
+}
+
+.dialog-html-3 .info p {
+    width: 80%;
+    transform: translate(55px, 35px);
+}
+
+.dialog-html-4 .info {
+    svg {
+        width: 150%;
+    }
+    p {
+        width: 100%;
+        transform: translate(55px, 25px);
+    }
+}
+
+.dialog-html-5 .info p {
+    width: 80%;
+    transform: translate(55px, 27px);
 }
 
 .myAnimate {
@@ -626,6 +678,22 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    .dialog .info {
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 15px;
+        transform: translate(0, 0) !important;
+
+        svg {
+            display: none;
+        }
+
+        p {
+            width: 100% !important;
+            transform: translate(0, 0) !important;
         }
     }
 
