@@ -19,8 +19,6 @@ body {
 }
 
 .preloader {
-    pointer-events: none;
-    opacity: 0;
     background: black;
     width: 100%;
     height: 100%;
@@ -502,18 +500,38 @@ p {
     }
 }
 
-.dialog-index-5 .info p {
-    width: 80%;
-    transform: translate(55px, 35px);
+.dialog-index-5 .info {
+    transform: translate(20px, -30px);
+
+    p {
+        width: 80%;
+        transform: translate(55px, 35px);
+    }
 }
 
-.dialog-html-1 .info p {
-    width: 80%;
-    transform: translate(55px, 25px);
+.dialog-index-6 .info {
+    transform: translate(-30px, -70px);
+
+    svg {
+        width: 100%;
+    }
+    p {
+        width: 70%;
+        transform: translate(130px,67px);
+    }
 }
+
+.dialog-html-1 .info {
+    transform: translate(30px, -25px);
+
+    p {
+        width: 80%;
+        transform: translate(55px, 25px);
+    }
+} 
 
 .dialog-html-2 .info {
-    transform: translate(-30px, -10px);
+    transform: translate(-50px, -30px);
     svg {
         width: 160%;
     }
@@ -523,12 +541,18 @@ p {
     }
 }
 
-.dialog-html-3 .info p {
-    width: 80%;
-    transform: translate(55px, 35px);
+.dialog-html-3 .info {
+    transform: translate(0px, -30px);
+
+    p {
+        width: 80%;
+        transform: translate(55px, 35px);
+    }
 }
 
 .dialog-html-4 .info {
+    transform: translate(0px, -30px);
+
     svg {
         width: 150%;
     }
@@ -538,9 +562,409 @@ p {
     }
 }
 
-.dialog-html-5 .info p {
-    width: 80%;
-    transform: translate(55px, 27px);
+.dialog-html-5 .info {
+    transform: translate(0px, -30px);
+
+    p {
+        width: 80%;
+        transform: translate(55px, 27px);
+    }
+} 
+
+.dialog-css-1 .info {
+    transform: translate(-30px, -10px);
+
+    svg {
+        width: 130%;
+    }
+
+    p {
+        width: 100%;
+        transform: translate(32px,20px);
+    }
+}
+
+.dialog-css-2 .info {
+    transform: translate(-20px, -20px);
+
+    svg {
+        width: 150%;
+    }
+
+    p {
+        width: 100%;
+        transform: translate(73px,40px);
+    }
+}
+
+.dialog-css-3 .info {
+    transform: translate(130px, -20px);
+
+    svg {
+        width: 90%;
+    }
+
+    p {
+        transform: translate(45px,30px);
+    }
+}
+
+.dialog-css-4 .info {
+    transform: translate(-10px, 0px);
+
+    svg {
+        width: 110%;
+    }
+
+    p {
+        transform: translate(45px,17px);
+    }
+}
+
+.dialog-css-5 .info {
+    transform: translate(125px, -15px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        transform: translate(40px,25px);
+    }
+}
+
+.dialog-verstka-2 .info {
+    transform: translate(-50px, -15px);
+
+    svg {
+        width: 110%;
+    }
+
+    p {
+        width: 85%;
+        transform: translate(70px, 32px);
+    }
+}
+
+.dialog-verstka-3 .info {
+    transform: translate(140px, -15px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        width: 70%;
+        transform: translate(48px, 23px);
+    }
+}
+
+.dialog-verstka-4 .info {
+    transform: translate(140px, -15px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        width: 70%;
+        transform: translate(48px, 23px);
+    }
+}
+
+.dialog-js-2 .info {
+    transform: translate(-20px, -65px);
+
+    svg {
+        width: 130%;
+    }
+
+    p {
+        width: 100%;
+        transform: translate(50px,40px);
+    }
+}
+
+.dialog-js-3 .info {
+    transform: translate(20px, -25px);
+
+    p {
+        transform: translate(55px, 38px);
+    }
+}
+
+.dialog-js-4 .info {
+    transform: translate(190px, -25px);
+
+    svg {
+        width: 75%;
+    }
+
+    p {
+        width: 70%;
+        transform: translate(48px, 23px);
+    }
+}
+
+.dialog-js-5 .info {
+    transform: translate(170px, -25px);
+
+    svg {
+        width: 80%;
+    }
+
+    p {
+        width: 70%;
+        transform: translate(40px,26px);
+    }
+}
+
+.dialog-js-6 .info {
+    transform: translate(-20px, -55px);
+
+    svg {
+        width: 80%;
+    }
+
+    p {
+        width: 50%;
+        transform: translate(95px,39px);
+    }
+}
+
+.dialog-js-7 .info {
+    transform: translate(125px, -25px);
+
+    svg {
+        width: 80%;
+    }
+
+    p {
+        width: 60%;
+        transform: translate(50px,20px);
+    }
+}
+
+.dialog-js-8 .info {
+    transform: translate(80px, -25px);
+
+    svg {
+        width: 90%;
+    }
+
+    p {
+        width: 70%;
+        transform: translate(50px,30px);
+    }
+}
+
+.dialog-react-1 .info {
+    transform: translate(10px, -30px);
+
+    p {
+        transform: translate(60px,30px);
+    }
+}
+
+.dialog-react-2 .info {
+    transform: translate(10px, -30px);
+
+    p {
+        transform: translate(60px,30px);
+    }
+}
+
+.dialog-react-3 .info {
+    transform: translate(-80px, -30px);
+
+    svg {
+        width: 135%;
+    }
+
+    p {
+        width: 100%;
+        transform: translate(35px,15px);
+    }
+}
+
+.dialog-react-4 .info {
+    transform: translate(140px, 0px);
+
+    svg {
+        width: 80%;
+    }
+
+    p {
+        width: 65%;
+        transform: translate(45px,20px);
+    }
+}
+
+.dialog-react-5 .info {
+    transform: translate(100px, -20px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        width: 70%;
+        transform: translate(55px,25px);
+    }
+}
+
+.dialog-other-1 .info {
+    transform: translate(-40px, -30px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        width: 60%;
+        transform: translate(97px,43px);
+    }
+}
+
+.dialog-other-3 .info {
+    transform: translate(-20px, -60px);
+
+    svg {
+        width: 70%;
+    }
+
+    p {
+        width: 50%;
+        transform: translate(80px,43px);
+    }
+}
+
+.dialog-other-4 .info {
+    transform: translate(60px, -45px);
+
+    p {
+        width: 90%;
+        transform: translate(50px,35px);
+    }
+}
+
+.dialog-other-5 .info {
+    transform: translate(40px, -45px);
+
+    p {
+        transform: translate(60px,35px);
+    }
+}
+
+.dialog-other-6 .info {
+    transform: translate(10px, -45px);
+
+    p {
+        transform: translate(50px,35px);
+    }
+}
+
+.dialog-other-7 .info {
+    transform: translate(230px, -25px);
+
+    svg {
+        width: 70%;
+    }
+
+    p {
+        width: 60%;
+        transform: translate(40px,25px);
+    }
+}
+
+.dialog-other-8 .info {
+    transform: translate(0px, -25px);
+
+    p {
+        transform: translate(65px,30px);
+    }
+}
+
+.dialog-other-9 .info {
+    transform: translate(230px, -25px);
+
+    svg {
+        width: 70%;
+    }
+
+    p {
+        width: 60%;
+        transform: translate(40px,20px);
+    }
+}
+
+.dialog-other-10 .info {
+    transform: translate(230px, 0px);
+
+    svg {
+        width: 70%;
+    }
+
+    p {
+        width: 60%;
+        transform: translate(40px,20px);
+    }
+}
+
+.dialog-other-11 .info {
+    transform: translate(80px, -25px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        width: 60%;
+        transform: translate(40px,20px);
+    }
+}
+
+.dialog-other-12 .info {
+    transform: translate(0px, -25px);
+
+    p {
+        transform: translate(50px,35px);
+    }
+}
+
+.dialog-final-1 .info {
+    transform: translate(120px, -25px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        width: 60%;
+        transform: translate(50px,20px);
+    }
+}
+
+.dialog-final-3 .info {
+    transform: translate(120px, -25px);
+
+    svg {
+        width: 85%;
+    }
+
+    p {
+        width: 70%;
+        transform: translate(50px,22px);
+    }
+}
+
+.dialog-final-4 .info {
+    transform: translate(-40px,-65px);
+
+    p {
+        width: 70%;
+        transform: translate(130px,68px);
+    }
 }
 
 .myAnimate {
