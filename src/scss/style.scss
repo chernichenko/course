@@ -487,6 +487,26 @@ p {
 
 // Dialog coord
 
+.dialog .info p {
+    width: 80%;
+    transform: translate(55px, 25px);
+}
+
+.dialog-index-1 .info {
+    svg {
+        width: 105%;
+    }
+    p {
+        width: 90%;
+        transform: translate(55px, 22px);
+    }
+}
+
+.dialog-index-5 .info p {
+    width: 80%;
+    transform: translate(55px, 35px);
+}
+
 .dialog-html-1 .info p {
     width: 80%;
     transform: translate(55px, 25px);
@@ -540,6 +560,7 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 25px;
 
     a {
         padding: 15px 35px;
@@ -574,7 +595,7 @@ p {
 
     & a:hover {
         .back {
-            fill: #befe00;
+            fill: #2ebd03;
         }
     }
 
