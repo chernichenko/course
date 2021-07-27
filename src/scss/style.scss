@@ -19,6 +19,8 @@ body {
 }
 
 .preloader {
+    pointer-events: none;
+    opacity: 0;
     background: black;
     width: 100%;
     height: 100%;
@@ -500,6 +502,33 @@ p {
     }
 }
 
+.dialog-index-2, .dialog-index-3 {
+    margin-top: 80px;
+}
+
+
+.dialog-index-2 .info {
+    transform: translate(40px, -50px);
+}
+
+.dialog-index-3 .info {
+    transform: translate(20px, -70px);
+
+    p {
+        width: 80%;
+        transform: translate(55px, 35px);
+    }
+}
+
+.dialog-index-4 .info {
+    transform: translate(20px, -50px);
+
+    p {
+        width: 80%;
+        transform: translate(55px, 35px);
+    }
+}
+
 .dialog-index-5 .info {
     transform: translate(20px, -30px);
 
@@ -633,6 +662,14 @@ p {
     }
 }
 
+.dialog-verstka-1 .info {
+    transform: translate(15px, -35px);
+
+    p {
+        transform: translate(50px, 30px);
+    }
+}
+
 .dialog-verstka-2 .info {
     transform: translate(-50px, -15px);
 
@@ -655,7 +692,7 @@ p {
 
     p {
         width: 70%;
-        transform: translate(48px, 23px);
+        transform: translate(48px, 18px);
     }
 }
 
@@ -669,6 +706,19 @@ p {
     p {
         width: 70%;
         transform: translate(48px, 23px);
+    }
+}
+
+.dialog-js-1 .info {
+    transform: translate(25px, -50px);
+
+    svg {
+        width: 95%;
+    }
+
+    p {
+        width: 75%;
+        transform: translate(50px,35px);
     }
 }
 
@@ -826,6 +876,18 @@ p {
     }
 }
 
+.dialog-other-2 {
+    margin-top: 80px;
+}
+
+.dialog-other-2 .info {
+    transform: translate(0px, -50px);
+
+    p {
+        transform: translate(60px,27px);
+    }
+}
+
 .dialog-other-3 .info {
     transform: translate(-20px, -60px);
 
@@ -929,6 +991,14 @@ p {
 
     p {
         transform: translate(50px,35px);
+    }
+}
+
+.dialog-other-13 .info {
+    transform: translate(10px, -60px);
+
+    p {
+        transform: translate(50px,40px);
     }
 }
 
