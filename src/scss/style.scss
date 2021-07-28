@@ -19,8 +19,6 @@ body {
 }
 
 .preloader {
-    pointer-events: none;
-    opacity: 0;
     background: black;
     width: 100%;
     height: 100%;
@@ -507,8 +505,17 @@ p {
 }
 
 
-.dialog-index-2 .info {
-    transform: translate(40px, -50px);
+.dialog-index-2 {
+    .image-wrap {
+        transform: scale(1.25) translate(0, -40px);
+    }
+    .info {
+        transform: translate(-60px, -40px);
+    
+        p {
+            transform: translate(110px, 20px);
+        }
+    }
 }
 
 .dialog-index-3 .info {
@@ -525,7 +532,7 @@ p {
 
     p {
         width: 80%;
-        transform: translate(55px, 35px);
+        transform: translate(105px, 3   5px);
     }
 }
 
@@ -671,15 +678,15 @@ p {
 }
 
 .dialog-verstka-2 .info {
-    transform: translate(-50px, -15px);
+    transform: translate(-30px, -70px);
 
     svg {
         width: 110%;
     }
 
     p {
-        width: 85%;
-        transform: translate(70px, 32px);
+        width: 80%;
+        transform: translate(150px, 75px);
     }
 }
 
@@ -697,15 +704,15 @@ p {
 }
 
 .dialog-verstka-4 .info {
-    transform: translate(140px, -15px);
+    transform: translate(-30px, -70px);
 
     svg {
-        width: 85%;
+        width: 100%;
     }
 
     p {
         width: 70%;
-        transform: translate(48px, 23px);
+        transform: translate(130px, 65px);
     }
 }
 
@@ -1015,6 +1022,17 @@ p {
     }
 }
 
+.dialog-final-2 {
+    margin-bottom: 80px;
+}
+
+.dialog-final-2 .info {
+
+    p {
+        transform: translate(110px,30px);
+    }
+}
+
 .dialog-final-3 .info {
     transform: translate(120px, -25px);
 
@@ -1193,6 +1211,12 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    .dialog {
+        .image-wrap {
+            transform: scale(1) !important;
         }
     }
 
