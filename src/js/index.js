@@ -24,61 +24,61 @@ const animationInit = () => {
 
 	const logoTime = 0.2
 
-	// setTimeout(() => {
-	// 	let tlLogo = new TimelineMax()
-	// 	tlLogo
-	// 		.to($('.preloader .logo-top-3'), logoTime, { opacity: 1 }, 0)
-	// 		.to($('.preloader .logo-bottom-1'), logoTime, { opacity: 1 }, 0)
+	setTimeout(() => {
+		let tlLogo = new TimelineMax()
+		tlLogo
+			.to($('.preloader .logo-top-3'), logoTime, { opacity: 1 }, 0)
+			.to($('.preloader .logo-bottom-1'), logoTime, { opacity: 1 }, 0)
 
-	// 		.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime)
-	// 		.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime)
+			.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime)
 
-	// 		.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 2)
-	// 		.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 2)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 2)
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 2)
 
-	// 		.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 3)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 3)
 
-	// 		.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 1 }, logoTime * 4)
+			.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 1 }, logoTime * 4)
 
-	// 		.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 0 }, logoTime * 5)
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 0 }, logoTime * 5)
 
-	// 		.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 6)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 0 }, logoTime * 6)
 
-	// 		.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime * 7)
-	// 		.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 7)
+			.to($('.preloader .logo-top-3, .preloader .logo-bottom-1'), logoTime, { opacity: 0 }, logoTime * 7)
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 7)
 
-	// 		.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 0 }, logoTime * 8)
-	// 		.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 8)
+			.to($('.preloader .logo-top-1, .preloader .logo-bottom-3'), logoTime, { opacity: 0 }, logoTime * 8)
+			.to($('.preloader .logo-top-2, .preloader .logo-bottom-2'), logoTime, { opacity: 1 }, logoTime * 8)
 
-	// 		.to($('.preloader .logo-top-1, .preloader .logo-top-3, .preloader .logo-bottom-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 9)
-	// 		//--------------------------------------------------------------
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, 0)
+			.to($('.preloader .logo-top-1, .preloader .logo-top-3, .preloader .logo-bottom-1, .preloader .logo-bottom-3'), logoTime, { opacity: 1 }, logoTime * 9)
+			//--------------------------------------------------------------
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, 0)
 
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-7'), logoTime, { opacity: 0 }, logoTime)
-	// 		.to($('.preloader .logo-romb-3, .preloader .logo-romb-5'), logoTime, { opacity: 1 }, logoTime)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-7'), logoTime, { opacity: 0 }, logoTime)
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-5'), logoTime, { opacity: 1 }, logoTime)
 
-	// 		.to($('.preloader .logo-romb-3, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 2)
-	// 		.to($('.preloader .logo-romb-2, .preloader .logo-romb-4, .preloader .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 2)
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 2)
+			.to($('.preloader .logo-romb-2, .preloader .logo-romb-4, .preloader .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 2)
 
-	// 		.to($('.preloader .logo-romb-2, .preloader .logo-romb-4, .preloader .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 3)
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-3, .preloader .logo-romb-5, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 3)
+			.to($('.preloader .logo-romb-2, .preloader .logo-romb-4, .preloader .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 3)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-3, .preloader .logo-romb-5, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 3)
 
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-5, .preloader .logo-romb-6, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 4)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-5, .preloader .logo-romb-6, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 4)
 
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 5)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 5)
 
-	// 		.to($('.preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-7'), logoTime, { opacity: 0 }, logoTime * 6)
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-7'), logoTime, { opacity: 0 }, logoTime * 6)
 
-	// 		.to($('.preloader .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 7)
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 1 }, logoTime * 7)
+			.to($('.preloader .logo-romb-6'), logoTime, { opacity: 0 }, logoTime * 7)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 1 }, logoTime * 7)
 
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 8)
-	// 		.to($('.preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 8)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5'), logoTime, { opacity: 0 }, logoTime * 8)
+			.to($('.preloader .logo-romb-3, .preloader .logo-romb-4, .preloader .logo-romb-7'), logoTime, { opacity: 1 }, logoTime * 8)
 
-	// 		.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5, .preloader .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 9)
+			.to($('.preloader .logo-romb-1, .preloader .logo-romb-2, .preloader .logo-romb-5, .preloader .logo-romb-6'), logoTime, { opacity: 1 }, logoTime * 9)
 
-	// 		.to($('.preloader'), logoTime, { opacity: 0 }, logoTime * 12)
-	// }, 500)
+			.to($('.preloader'), logoTime, { opacity: 0 }, logoTime * 12)
+	}, 500)
 }
 
 const otherInit = () => {
